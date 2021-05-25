@@ -78,7 +78,7 @@ CmdletsToExport = 'Get-AzCosmosDBSqlContainer',
                'Get-AzCosmosDBSqlContainerThroughput', 'Get-AzCosmosDBSqlDatabase', 
                'Get-AzCosmosDBSqlDatabaseThroughput', 
                'Get-AzCosmosDBSqlStoredProcedure', 'Get-AzCosmosDBSqlTrigger', 
-               'Get-AzCosmosDBSqlUserDefinedFunction', 
+               'Get-AzCosmosDBSqlUserDefinedFunction',               			   
                'New-AzCosmosDBSqlStoredProcedure', 'New-AzCosmosDBSqlTrigger', 
                'New-AzCosmosDBSqlUserDefinedFunction', 
                'Update-AzCosmosDBSqlStoredProcedure', 
@@ -155,7 +155,16 @@ CmdletsToExport = 'Get-AzCosmosDBSqlContainer',
                'Invoke-AzCosmosDBGremlinDatabaseThroughputMigration', 
                'Invoke-AzCosmosDBCassandraTableThroughputMigration', 
                'Invoke-AzCosmosDBCassandraKeyspaceThroughputMigration', 
-               'Invoke-AzCosmosDBTableThroughputMigration'
+               'Invoke-AzCosmosDBTableThroughputMigration',
+			   'Get-AzManagedCassandraCluster',
+			   'Get-AzManagedCassandraClusterNodeStatus',
+			   'New-AzManagedCassandraCluster',
+			   'Update-AzManagedCassandraCluster',
+			   'Remove-AzManagedCassandraCluster',
+			   'Get-AzManagedCassandraDataCenter',
+			   'New-AzManagedCassandraDataCenter',
+			   'Update-AzManagedCassandraDataCenter',
+			   'Remove-AzManagedCassandraDataCenter'
 
 # Variables to export from this module
 # VariablesToExport = @()
