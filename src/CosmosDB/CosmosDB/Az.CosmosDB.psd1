@@ -162,16 +162,7 @@ CmdletsToExport = 'Get-AzCosmosDBSqlContainer',
                'Remove-AzCosmosDBSqlRoleDefinition', 
                'Remove-AzCosmosDBSqlRoleAssignment', 
                'Update-AzCosmosDBSqlRoleDefinition', 
-               'Update-AzCosmosDBSqlRoleAssignment', 'New-AzCosmosDBPermission',
-               'Get-AzManagedCassandraCluster',
-			   'Get-AzManagedCassandraClusterNodeStatus',
-			   'New-AzManagedCassandraCluster',
-			   'Update-AzManagedCassandraCluster',
-			   'Remove-AzManagedCassandraCluster',
-			   'Get-AzManagedCassandraDataCenter',
-			   'New-AzManagedCassandraDataCenter',
-			   'Update-AzManagedCassandraDataCenter',
-			   'Remove-AzManagedCassandraDataCenter'
+               'Update-AzCosmosDBSqlRoleAssignment', 'New-AzCosmosDBPermission'
 
 # Variables to export from this module
 # VariablesToExport = @()
