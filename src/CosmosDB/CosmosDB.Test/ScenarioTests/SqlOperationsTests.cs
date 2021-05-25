@@ -50,9 +50,9 @@ namespace Microsoft.Azure.Commands.CosmosDB.Test.ScenarioTests.ScenarioTest
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        public void TestSqlMigrateThroughputCmdlets()
+        public void TestSqlRoleCmdlets()
         {
-            TestController.NewInstance.RunPowerShellTest(_logger, "Test-SqlMigrateThroughputCmdlets");
+            TestController.NewInstance.RunPowerShellTest(_logger, "Test-SqlRoleCmdlets");
         }
     }
 }

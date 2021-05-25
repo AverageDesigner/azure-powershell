@@ -20,10 +20,31 @@
 
 ## Upcoming Release
 
-## Version 1.1.0
-* Introduced NetworkAclBypass and NetworkAclBypassResourceIds for Database Account cmdlets.
-* Introduced ServerVersion parameter to Update-AzCosmosDBAccount.
-* Introduced BackupInterval and BackupRetention for Database Account cmdlets
+## Version 2.0.1
+* This release fixes the issue with error propagation for failed requests in case of PITR and RBAC cmdlets.
+
+## Version 2.0.0
+* This release introduces the cmdlets for the preview features of Continuous Backup(Point in time restore):
+  - Introduced support for creating accounts with continuous mode backup policy.
+  - Introduced support for Point in time restore for accounts with continuous mode backup policy.
+  - Introduced support to update the backup interval and backup retention for accounts with periodic mode backup policy.
+  - Introduced support to list the restorable resources in a live database account.
+  - New-AzCosmosBAccount cmdlet is updated with new parameters: IsRestoreReqeust, RestoreSource, RestoreTimestampInUtc, DatabasesToRestore, BackupPolicy.
+  - Update-AzCosmosDBAccount cmdlet is updated with new parameters: BackupPolicy.
+  - The following cmdlets are added:
+    - New-AzCosmosDBRestore, New-AzCosmosDBDatabaseToRestore, Get-AzCosmosDBRestorableDatabaseAccount,
+    - Get-AzCosmosDBSqlRestorableDatabase, Get-AzCosmosDBSqlRestorableContainer, Get-AzCosmosDBSqlRestorableResource,
+    - Get-AzCosmosDBMongoDBRestorableDatabase, Get-AzCosmosDBMongoDBRestorableCollection, Get-AzCosmosDBMongoDBRestorableResource.
+  - Removed the support for throughput Migration. (Please use the stable version of Az.CosmosDB Powershell module if you intend to use this feature).
+  - Removed AnalyticalStorageTTL from SqlContainer datamodel (Please use the stable version of Az.CosmosDB Powershell module if you intend to use this feature).
+* Introduced support for Sql data plane RBAC, allowing the creation, updating, removal, and retrieval of Role Definitions and Role Assignments
+  - The following cmdlets are added:
+    - Get-AzCosmosDBSqlRoleDefinition, Get-AzCosmosDBSqlRoleAssignment,
+    - New-AzCosmosDBSqlRoleDefinition, New-AzCosmosDBSqlRoleAssignment,
+    - Remove-AzCosmosDBSqlRoleDefinition, Remove-AzCosmosDBSqlRoleAssignment,
+    - Update-AzCosmosDBSqlRoleDefinition, Update-AzCosmosDBSqlRoleAssignment,
+    - New-AzCosmosDBSqlPermission
+* Please note this is a preview version. The cmdlets introduced here may be changed or removed in a future release.
 
 ## Version 1.0.0
 * General availability of 'Az.CosmosDB' module
